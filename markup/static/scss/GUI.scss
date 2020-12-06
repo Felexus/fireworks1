@@ -1,0 +1,262 @@
+// main style file by Maxim Sinukov
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    overflow-x: hidden;
+    &.no-scroll {
+		overflow: hidden;
+    }
+}
+
+body {
+    font-family: 'gilroy', sans-serif;
+    color: #353535;
+    font-style: normal;
+    margin: 0 !important;
+    transition: 0.3s;
+    font-weight: 400;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.collapsible-body {
+    overflow: hidden;
+}
+
+.footer {
+    margin-top: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    outline: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1530px;
+}
+
+.wrapper2 {
+    width: 1233px;
+    margin: 0 auto;
+}
+
+.wrapper3 {
+    width: 1362px;
+    margin: 0 auto;
+}
+
+.btn-1 {
+    border: 2px solid #0300A7;
+    box-sizing: border-box;
+    border-radius: 60px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #0300A7;
+    padding: 16px 28px;
+    &:hover {
+        color: #ffffff;
+        background-color: #0300A7;
+    }
+    &:active {
+        color: #cecece;
+        background-color: #0300A7;
+    }
+}
+
+.btn-2 {
+    border: 2px solid #0300A7;
+    box-sizing: border-box;
+    border-radius: 60px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #0300A7;
+    padding: 23px 60px;
+    &:hover {
+        color: #dddddd;
+        background-color: #03009e;
+    }
+    &:active {
+        color: #b1b1b1;
+        background-color: #020085;
+    }
+}
+
+.btn-3 {
+    box-sizing: border-box;
+    border-radius: 60px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #FF2828;;
+    padding: 23px 60px;
+    &:hover {
+        color: #dddddd;
+        background-color: #ff7777;;
+    }
+    &:active {
+        color: #d8d8d8;
+        background-color: #d61c1c;;
+    }
+}
+
+.m-bg-cont {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    img:nth-child(1) {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #323232;
+    font-weight: 400;
+}
+
+.collapsible-body {
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.class1::before {
+    content: "";
+    background: url("../img/content/class1.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 24px;
+    width: 21px;
+    height: 21px;
+}
+.class2::before {
+    content: "";
+    background: url("../img/content/class2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 24px;
+    width: 21px;
+    height: 21px;
+}
+.class3::before {
+    content: "";
+    background: url("../img/content/class3.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 24px;
+    width: 15px;
+    height: 21px;
+}
+h1 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #4F5152;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 1230px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 830px;
+    }
+    .class1::before {
+        left: 10px;
+    }
+    .class2::before {
+        left: 10px;
+    }
+    .class3::before {
+        left: 10px;
+    }
+    .btn-2 {
+        padding: 14px 24px;
+        font-size: 13px;
+    }
+    .wrapper2 {
+        margin: 0 auto;
+        width: 830px;
+    }
+    .wrapper3 {
+        margin: 0 auto;
+        width: 830px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper { 
+        margin: 0 auto;
+        width: 660px;
+    }
+    .wrapper2 {
+        margin: 0 auto;
+        width: 660px;
+    }
+    .wrapper3 {
+        margin: 0 auto;
+        width: 660px;
+    }
+    .btn-3 {
+        padding: 17px 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .wrapper { 
+        margin: 0 auto;
+        width: 350px;
+    }
+    .wrapper2 {
+        margin: 0 auto;
+        width: 350px;
+    }
+    .wrapper3 {
+        margin: 0 auto;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper { 
+        margin: 0 auto;
+        width: 300px;
+    }
+    .wrapper2 {
+        margin: 0 auto;
+        width: 300px;
+    }
+    .wrapper3 {
+        margin: 0 auto;
+        width: 300px;
+    }
+}
